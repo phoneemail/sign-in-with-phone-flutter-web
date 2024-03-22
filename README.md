@@ -1,81 +1,74 @@
-# Phone Login Demo App for Flutter Web
+# Sign in with Phone Flutter Web Demo
 
-![App Logo](https://www.phone.email/assets/imgs/page/homepage/logo.svg)
-
-Welcome to the Phone Login Demo App for Flutter web! This demo app showcases how to implement a phone login button in a Flutter web application, allowing users to log in using their phone numbers.
+Welcome to the Flutter demo repository for integrating "Sign in with Phone" functionality into your web applications. This repository showcases how you can seamlessly implement phone verification and authentication using our innovative plugin.
 
 ## Table of Contents
-
-- [Introduction](#introduction)
-- [Website](#website)
-- [Documentation](#documentation)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
+1. [Introduction](#introduction)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Example Demo](#example-demo)
+5. [Documentation](#documentation)
+6. [Website](#website)
 
 ## Introduction
 
-This Flutter web demo app is designed to provide a practical example of integrating a phone login functionality into your web applications. With this demo, you can easily understand and implement the phone login feature in your Flutter web projects.
+Phone Email presents a revolutionary solution for user authentication - "Sign in with Phone". Our plugin enables websites to offer seamless phone number verification to users, enhancing security and user experience. Similar to Firebase phone authentication, our solution embeds a "Log in with phone" button on client websites. Upon clicking, a verification window prompts users to enter their country code and mobile number. After successful verification through OTP sent to the user's mobile, control redirects back to the client website with an access token. Subsequently, passing this access token to the getuser REST API retrieves the verified mobile number.
 
-## Website
+### Key Benefits:
+- **Cost-Effective:** Minimal or no cost for phone verification.
+- **Enhanced Security:** OTP-based verification ensures secure authentication.
+- **Seamless Integration:** Easy integration into existing web applications.
+- **Improved User Experience:** Streamlined authentication process for users.
 
-Visit our official website: [www.phone.email](https://www.phone.email)
+## Installation
 
-## Documentation
+To integrate the "Sign in with Phone" functionality into your Next.js project, follow these steps:
 
-Detailed documentation is available at: [https://www.phone.email/docs#flutter](https://www.phone.email/docs#flutter)
+1. **Clone the repository:**
 
-## Features
+    ```bash
+    git clone https://github.com/phoneemail/sign-in-with-phone-flutter-web.git
+    ```
 
-- Seamless integration of phone login functionality in Flutter web.
-- Easy-to-use interface for users to log in using their phone numbers.
-- Comprehensive documentation for developers.
+2. **Navigate to the project directory:**
 
-## Getting Started
+    ```bash
+    cd sign-in-with-phone-flutter-web
+    ```
 
-To get started with the Phone Login Demo App, follow these simple steps:
+3. **Install dependencies:**
 
-1. Clone this repository: `git clone https://github.com/your-username/phone-login-demo-app.git`
-2. Navigate to the project directory: `cd phone-login-demo-app`
-3. Install dependencies: `flutter pub get`
-4. Run the app: `flutter run`
+    ```bash
+    flutter pub get
+    ```
+
+4. **Change the configuration:**
+Replace `API_KEY` with your API KEY and `countryCode` & `phoneNumber` with your registered details in `main.dart` file.
 
 ## Usage
 
-Incorporating the phone login button into your Flutter web application is straightforward. Follow the steps outlined in the [documentation](https://www.phone.email/docs#flutter) for a seamless integration experience.
+To utilize the application:
 
-```dart
-// Sample code snippet for using the phone login button
-import 'package:flutter/material.dart';
-import 'package:phone_login_package/phone_login_package.dart';
+1. **Start the application:**
 
-void main() {
-  runApp(MyApp());
-}
+    ```bash
+    flutter run
+    ```
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Phone Login Demo'),
-        ),
-        body: Center(
-          child: PhoneLoginButton(
-            onLogin: (phoneNumber) {
-              // Handle the login logic here
-              print('Logged in with phone number: $phoneNumber');
-            },
-          ),
-        ),
-      ),
-    );
-  }
-}
-```
 
-## Contributing
-Contributions are welcome! If you have any suggestions, feature requests, or bug reports, please open an issue or create a pull request.
+## Example Demo
 
+Experience the seamless authentication process firsthand with our [demo](https://www.phone.email/demo-login). Our demo provides a live demonstration of the "Sign in with Phone" plugin, showcasing its functionality and ease of use. Explore the demo to understand how the plugin can enhance the authentication experience on your website. 
+
+## Documentation
+
+For comprehensive documentation on integrating the "Sign in with Phone" plugin into your flutter web application, refer to our [documentation](https://www.phone.email/docs#flutter). The documentation provides detailed instructions, code samples, and configuration options to help you seamlessly integrate the plugin into your project. 
+
+## Website
+
+Visit our [website](https://www.phone.email) to learn more about our authentication solutions and explore additional features and services. Experience the future of authentication with Phone Email's "Sign in with Phone" plugin.
+By implementing our plugin, you can elevate the security of your website, enhance user experience, and streamline the authentication process for your users. Embrace the power of phone verification with Phone Email's innovative solution.
+
+---
+Developed by [Phone Email](https://www.phone.email)
+![App Logo](https://www.phone.email/assets/imgs/page/homepage/logo.svg)
